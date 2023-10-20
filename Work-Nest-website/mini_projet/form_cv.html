@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="container">
+        <header> Curriculum vitae</header>
+
+        <form action="eg.php" method="post">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" required onkeyup="car(this)" name="name">
+                        </div>
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" required name="date">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="email" placeholder="Enter your email" required  name="mail"/>
+                        </div>
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="text" placeholder="Enter mobile number" required onkeyup="numberonly(this)" name="phone">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Civil Status</label>
+                            <select name="stat" required>
+                                <option disabled selected>Select Status</option>
+                                <option>Bachelor</option>
+                                <option>Married</option>
+                                <option>Others</option>
+                            </select>
+                        </div> 
+                        <div class="input-field">
+                            <label>Adresses</label>
+                            <input type="text" placeholder="Enter your addresse" required name="adr">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+                       
+                        <div class="input-field">
+                            <label>University</label>
+                            <select name="University" required>
+                                <option disabled selected >Select University</option>
+                                <option name="University">ISG -Tunis-</option>
+                                <option name="University">IHEC -Tunis-</option>
+                                <option name="University">ISI -TUNIS</option>
+                                <option name="University">Paris-Saclay -PARIS</option>
+                                <option name="University">Paris 8 -PARIS</option>
+                                <option name="University">Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Diplomas</label>
+                            <select name="diplomas" required>
+                                <option disabled selected>Select Diplomas</option>
+                                <option>General and technological baccalaureate</option>
+                                <option>baccalaureate Pro</option>
+                                <option>License</option>
+                                <option>Master's degree</option>
+                                <option>BTS</option>
+                                <option>Others</option>
+                            </select>
+                        </div> 
+                        <div class="input-field">
+                            <label>List of competencies</label>
+                            <select name="competance" required>
+                                <option disabled selected>Select competencies</option>
+                                <option>Java, C#, SQL server database, C++</option>
+                                <option>HTML, CSS, PHP ,SQL, JS</option>
+                                <option>Java, Python, C#, C++</option>
+                                <option>Oracle</option>
+                                <option>Réseaux et sécurité informatique:Wireshark, Nmap</option>
+                                <option>framework: React, Angular, Vue.js</option>
+                                <option>Analyse de données:R, Excel, Tableau</option>
+                                <option>Cloud Computing:AWS, Azure, Google Cloud</option>
+                                <option>Others</option>
+                            </select>
+                        </div> 
+                        <div class="input-field">
+                            <label>You prefer to work in </label>
+                            <select required>
+                                <option disabled selected>Select preferences</option>
+                                <option>A Team </option>
+                                <option>Solo</option>
+                                <option>With 2 to 3 Workers</option>
+                            </select>
+                        </div> 
+                        <div class="input-field">
+                            <label>Pseudo</label>
+                            <input type="text" placeholder="Enter Pseudo" required name="pseudo">
+                        </div> 
+                        <div class="input-field">
+                            <label>Years Of Experience</label>
+                            <input type="number" placeholder="Enter issued authority" required name="experience">
+                        </div>
+
+                    </div>
+                   
+                    <button class="nextBtn">
+                      <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </a>
+                </div> 
+            </div>
+
+          
+                    </div>
+                </div> 
+            </div>
+        
+    </div>
+</form>
+    <div class="coniner">
+		<input type="file" id="file" accept="image/*" hidden>
+		<div class="img-area" data-img="">
+			<i class='bx bxs-cloud-upload icon'></i>
+			<h3>Upload Image</h3>
+			<p>Image size must be less than <span>2MB</span></p>
+		</div>
+		<button class="select-image" >Select Image</button>
+	</div>
+
+    <script src="cv.js"></script>
+</body>
+</html>
